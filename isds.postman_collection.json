@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "211d9672-f462-4f52-a2d2-ec3e79073201",
+		"name": "isds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21782687"
+	},
+	"item": [
+		{
+			"name": "add user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "add user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"samuel\",\n    \"last_name\": \"olubayo\",\n    \"email\":\"samuelolubayo@gmail.com\",\n    \"password\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2023/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "285"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11d-LeuXXF1ONkpiO3awSlWh4jHk9V4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 22:44:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User created successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"first_name\": \"samuel\",\n        \"last_name\": \"olubayo\",\n        \"email\": \"samuelolubayo@gmail.com\",\n        \"password\": \"$2b$10$wweqqKJF9ZyEX4nVmnNkLemK77/tdxyt6d/Oh6iYcAQF50/AcjkPW\",\n        \"updatedAt\": \"2022-12-07T22:44:44.816Z\",\n        \"createdAt\": \"2022-12-07T22:44:44.816Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get user by Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "get user by Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2023/api/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "238"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ee-TCwoY8AFCFEQaO8IkIEB0eqsSG0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 22:50:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"first_name\": \"samuel\",\n    \"last_name\": \"olubayo\",\n    \"email\": \"samuelolubayo@gmail.com\",\n    \"password\": \"$2b$10$TdgI41Ucm3lKVY/zNeqGUuLYMpl6zzD9K1M/.kRsB61QD9K.aS95G\",\n    \"createdAt\": \"2022-12-07T22:50:17.905Z\",\n    \"updatedAt\": \"2022-12-07T22:50:17.905Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "user login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"samuelolubayo@gmail.com\",\n    \"password\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2023/api/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"samuelolubayo@gmail.com\",\n    \"password\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2023/api/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "426"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1aa-A4EX754D6Eev5WATPC2dCJ+g69Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 23:30:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Login successfully\",\n    \"user\": {\n        \"id\": 1,\n        \"first_name\": \"samuel\",\n        \"last_name\": \"olubayo\",\n        \"email\": \"samuelolubayo@gmail.com\",\n        \"password\": \"$2b$10$8Isw.wIqs7kIHOAFTVmucOpWwMZCU7CURWht7nHuFrbkEOm07LUWi\",\n        \"createdAt\": \"2022-12-07T23:30:05.521Z\",\n        \"updatedAt\": \"2022-12-07T23:30:05.521Z\"\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcwNDU1ODMzLCJleHAiOjE3NTY4NTU4MzN9.l1dBLn_9zSQRsoXrrBTaByYnsAHiuKgrYe2ZGDCDdfQ\"\n}"
+				},
+				{
+					"name": "[failed] user login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"samuelolubayo@gmail.com\",\n    \"password\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2023/api/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-e7Arm6Qm/Z1Jg8CuoFPWxr3JL6s\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 23:32:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Login Failed\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:2023/api/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete user",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:2023/api/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b-jle6IiQ2yjSM6wD1yBa90czkO2E\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 23:36:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Deleted successfully\",\n    \"data\": 1\n}"
+				}
+			]
+		}
+	]
+}
