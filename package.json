@@ -1,0 +1,22 @@
+{
+  "name": "isds-express-postgres-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sambayour/curly-chainsaw.git"
+  },
+  "author": "Samuel Olubayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sambayour/curly-chainsaw/issues"
+  },
+  "homepage": "https://github.com/sambayour/curly-chainsaw#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
